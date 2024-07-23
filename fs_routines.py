@@ -62,7 +62,6 @@ def parse_inpx(filename: str, progress_cb: Callable[[int], None] = None) -> (Dic
                     by_genre[genre].append(book)
             if progress_cb:
                 progress_cb(int(fnum * 100 / len(files)))
-            break
     return by_author, by_genre
 
 
